@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <%- include('../partial/admin-head-link.ejs') %>
+</head>
+<style>
+    table {
+      border-collapse: collapse;
+      border-spacing: 0;
+      width: 100%;
+      border: 1px solid #ddd;
+    }
+    
+    th, td {
+      text-align: left;
+      padding: 8px;
+    }
+    
+    tr:nth-child(even){background-color: #f2f2f2}
+</style>
+<body>
+    <%-include('../partial/admin-dashbord.ejs') %>
+    <div id="content">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+
+                <button type="button" id="sidebarCollapse" class="btn btn-info">
+                    <i class="fas fa-align-left"></i>
+                    <span>Close </span>
+                </button>
+               
+
+            </div>
+        </nav>
+
+        <h2>Explore Categories</h2>
+        <div style="overflow-x:auto;">
+          <table>
+            <tr>
+              <th>No.</th>
+              <th>Name</th>
+              <th>Image</th>
+              <th>Products</th>
+              <th>view-products</th>
+           
+             
+            </tr>
+            <tr>
+              <td>Jill</td>
+              <td>Smith</td>
+              <td><img src="/images/index/menHome.jpg" style="max-width: 100px; max-height: 80px; border-radius: 5px;" ></td>
+              <td>50</td>
+              <td>50</td>
+             
+            </tr>
+            <tr>
+              <td>Eve</td>
+              <td>Jackson</td>
+              <td><img src="/images/index/menHome.jpg" style="max-width: 50px; max-height: 50px; border-radius: 5px;" ></td>
+
+              <td>94</td>
+              <td>94</td>
+              
+            </tr>
+            <tr>
+              <td>Adam</td>
+              <td>Johnson</td>
+              <td><img src="/images/index/menHome.jpg"  style="max-width: 50px; max-height: 50px; border-radius: 5px;"></td>
+
+              <td>67</td>
+              <td>67</td>
+              
+            </tr>
+          </table>
+        </div>
+</div>
+</div>
+<%-include('../partial/admin-down-link.ejs') %>
+
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container" style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;">
+  <h2>Add Products</h2>
+  <form action="/add-product" method="post" enctype="multipart/form-data">
+    <div class="form-group mb-6">
+        <label class="input-group-text" for="inputGroupSelect01">Select Category </label>
+        <select class="form-select" id="inputGroupSelect01">
+          <option selected>Choose...</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+      </div>
+    <div class="form-group">
+      <label>Name</label>
+      <input type="text" class="form-control" id="name" placeholder="Enter name" name="name">
+    </div>
+    <div class="form-group">
+        <label>Price</label>
+        <input type="number" class="form-control" id="price" placeholder="Enter price" name="price">
+      </div>
+      <div class="form-group">
+        <label>Quantity</label>
+        <input type="text" class="form-control" id="Quantity" placeholder="Enter Quantity" name="Quantity">
+      </div>
+      
+<div class="input-group m-4">
+    <label for="">Select Images</label>
+    <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+  </div>
+  <div class=" form-group mb-3">
+    <label for="exampleFormControlTextarea1" class="form-label">Discription</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+    <div class="form-group">
+    <button type="submit" class="btn btn-primary">Submit</button>
+</div>
+  </form>
+  <div  style="float: right; margin: 5px 0px;">
+  <a href="/admin"><button type="button" class="btn btn-info">Back to home</button></a>
+</div>
+</div>
+
+</body>
+</html>
